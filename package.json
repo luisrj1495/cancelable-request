@@ -1,0 +1,16 @@
+{
+  "name": "cancelable-request",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisrj1495/cancelable-request"
+  } ,
+  "keywords": ["cancelable"],
+  "author": "Luis <luisrj1495@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisrj1495/cancelable-request/issues"
+  },
+  "homepage": "https://github.com/luisrj1495/cancelable-request#readme"
+}
