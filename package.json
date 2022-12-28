@@ -1,16 +1,39 @@
 {
   "name": "cancelable-request",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisrj1495/cancelable-request"
-  } ,
-  "keywords": ["cancelable"],
+  },
+  "keywords": [
+    "cancelable",
+    "request",
+    "axios",
+    "abort"
+  ],
   "author": "Luis <luisrj1495@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luisrj1495/cancelable-request/issues"
   },
-  "homepage": "https://github.com/luisrj1495/cancelable-request#readme"
+  "homepage": "https://github.com/luisrj1495/cancelable-request#readme",
+  "devDependencies": {
+    "@types/jest": "29.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "eslint": "8.30.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "jest": "29.3.1",
+    "typescript": "4.9.4"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.15.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --ext ts,tsx -f"
+  }
 }
