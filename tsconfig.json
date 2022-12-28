@@ -3,11 +3,11 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "lib", // where to put the compiled JS files
-    "target": "es2016", // which level of JS support to target
+    "target": "es2016",
     "module": "CommonJS",
     "noImplicitAny": true,
     "declaration": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib", "**/__tests__/*"]
 }

@@ -1,6 +1,6 @@
 {
   "name": "cancelable-request",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisrj1495/cancelable-request"
@@ -9,11 +9,19 @@
     "cancelable",
     "request",
     "axios",
-    "abort"
+    "abort",
+    "fetch",
+    "canceled",
+    "signal",
+    "cancellation",
+    "await"
   ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Luis <luisrj1495@gmail.com>",
+  "files": [
+    "lib/**/*"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luisrj1495/cancelable-request/issues"
