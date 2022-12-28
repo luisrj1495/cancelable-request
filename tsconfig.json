@@ -2,15 +2,12 @@
   "compilerOptions": {
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": false /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
-    "declarationMap": false /* Create sourcemaps for d.ts files. */,
-    "outDir": "dist", // where to put the compiled JS files
+    "outDir": "lib", // where to put the compiled JS files
     "target": "es2016", // which level of JS support to target
-    "module": "CommonJS", // which system for the program AMD, UMD, System, CommonJS
-
-    // Recommended: Compiler complains about expressions implicitly typed as 'any'
-    "noImplicitAny": true
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "declaration": true
   },
-  "include": ["src"], // which files to compile
-  "exclude": ["node_modules"] // which files to skip
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
 }
