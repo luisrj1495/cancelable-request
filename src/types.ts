@@ -3,6 +3,6 @@ type OmitFirstArgType<F> = F extends (x: any, ...args: infer P) => infer R
   : never;
 
 export interface CancelableRequestFnType<T extends (...args: any[]) => any> {
-  (...args: Parameters<OmitFirstArgType<T>>): Promise<ReturnType<T>>;
+  (...args: Parameters<OmitFirstArgType<T>>): Promise<Awaited<ReturnType<T>>>
   cancel(): void;
 }
