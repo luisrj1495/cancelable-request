@@ -1,5 +1,5 @@
 import { isCancel } from "./isCancel";
-import { AbortError } from "./error";
+import { CancelableError } from "./error";
 
 // Types
 import { CancelableRequestFnType } from "./types";
@@ -26,7 +26,7 @@ export const cancelableRequest = <
       return response;
     } catch (e) {
       if (isCancel(e))
-        throw new AbortError(cancelToken.signal.reason || errorMessage);
+        throw new CancelableError(cancelToken.signal.reason || errorMessage);
 
       return Promise.reject(e);
     }

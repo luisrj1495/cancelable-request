@@ -1,5 +1,5 @@
-export class AbortError extends Error {
-  name = "AbortError";
+export class CancelableError extends Error {
+  name = "CancelableError";
   canceled = true;
   constructor(message?: string) {
     super(message);

@@ -1,6 +1,6 @@
 {
   "name": "cancelable-request",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisrj1495/cancelable-request"
