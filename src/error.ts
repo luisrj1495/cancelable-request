@@ -1,6 +1,6 @@
 export class CancelableError extends Error {
   name = "CancelableError";
-  canceled = true;
+  __CANCEL__ = true;
   constructor(message?: string) {
     super(message);
   }
