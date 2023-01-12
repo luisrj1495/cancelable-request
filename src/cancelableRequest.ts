@@ -1,3 +1,6 @@
+import { isCancel } from "./isCancel";
+import { AbortError } from "./error";
+
 // Types
 import { CancelableRequestFnType } from "./types";
 
@@ -8,15 +11,25 @@ export const cancelableRequest = <
   message?: string
 ) => {
   let cancelToken: AbortController | null = null;
+  const errorMessage = message || "canceled";
 
-  const cancel = () => cancelToken?.abort(message || "Request canceled");
+  const cancel = () => cancelToken?.abort(errorMessage);
 
-  const cancelable: CancelableRequestFnType<T> = (...params) => {
+  const cancelable: CancelableRequestFnType<T> = async (...params) => {
     cancel();
 
     cancelToken = new AbortController();
 
-    return cb(cancelToken.signal, ...params);
+    try {
+      const response = await cb(cancelToken.signal, ...params);
+
+      return response;
+    } catch (e) {
+      if (isCancel(e))
+        throw new AbortError(cancelToken.signal.reason || errorMessage);
+
+      return Promise.reject(e);
+    }
   };
 
   cancelable.cancel = cancel;
