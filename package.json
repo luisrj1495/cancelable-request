@@ -1,7 +1,7 @@
 {
   "name": "cancelable-request",
-  "description": "cancelable-request allows us to abort Web requests as and when desired.",
-  "version": "1.0.8",
+  "description": "Allows you to abort Web requests as and when desired.",
+  "version": "1.0.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luisrj1495/cancelable-request"
