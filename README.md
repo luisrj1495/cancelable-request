@@ -1,6 +1,7 @@
 [![npm version](https://badge.fury.io/js/cancelable-request.svg)](https://badge.fury.io/js/cancelable-request)
 [![TypeScript](https://badgen.net/badge/icon/typescript?icon=typescript&label)](https://typescriptlang.org)
-[![GitHub branches](https://badgen.net/github/branches/luisrj1495/cancelable-request)](https://github.com/luisrj1495/cancelable-request/)
+[![npm downloads](https://img.shields.io/npm/dt/cancelable-request.svg?maxAge=2592000)](https://www.npmtrends.com/cancelable-request)
+
 
 # Cancelable Request
 
